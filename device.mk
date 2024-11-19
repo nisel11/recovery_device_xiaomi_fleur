@@ -6,6 +6,7 @@
 #
 
 LOCAL_PATH := device/xiaomi/fleur
+
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
@@ -15,17 +16,8 @@ AB_OTA_POSTINSTALL_CONFIG += \
 
 # Boot control HAL
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.0-impl \
-    android.hardware.boot@1.0-service
-
-PRODUCT_PACKAGES += \
-    bootctrl.mt6781
-
-PRODUCT_STATIC_BOOT_CONTROL_HAL := \
     bootctrl.mt6781 \
-    libgptutils \
-    libz \
-    libcutils
+    bootctrl.mt6781.recovery
 
 PRODUCT_PACKAGES += \
     otapreopt_script \
@@ -33,3 +25,16 @@ PRODUCT_PACKAGES += \
     update_engine \
     update_verifier \
     update_engine_sideload
+
+# FastbootD
+PRODUCT_PACKAGES += \
+    fastbootd
+
+# VNDK
+PRODUCT_TARGET_VNDK_VERSION := 31
+
+# API
+PRODUCT_SHIPPING_API_LEVEL := 30
+
+# Dynamic Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
