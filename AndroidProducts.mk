@@ -6,9 +6,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_fleur.mk
-
-COMMON_LUNCH_CHOICES := \
-    omni_fleur-user \
-    omni_fleur-userdebug \
-    omni_fleur-eng
+    $(LOCAL_DIR)/twrp_fleur.mk
