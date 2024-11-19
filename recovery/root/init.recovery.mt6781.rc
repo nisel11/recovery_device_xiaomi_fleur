@@ -30,7 +30,7 @@ on property:ro.crypto.state=encrypted && property:ro.crypto.type=file
 on fs && property:ro.debuggable=0
     start adbd
 
-service vibrator-fleur /system/bin/hw/android.hardware.vibrator-service.fleur
+service vibrator-mediatek /system/bin/hw/android.hardware.vibrator-service.mediatek
     user root
     group root
     class hal
@@ -82,4 +82,4 @@ on property:twrp.all.users.decrypted=true
 on boot
     start boot-hal-1-2
     start health-hal-2-1
-    start vibrator-fleur
+    start vibrator-mediatek
