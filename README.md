@@ -35,7 +35,7 @@
 - [x] poweroff
 - [x] battery level
 - [x] temperature
-- [ ] encrypted backups
+- [x] encrypted backups
 - [x] input devices via USB (USB-OTG) - keyboard, mouse and disks (not supported by the device)
 - [ ] USB mass storage export
 - [x] set brightness

@@ -177,6 +177,7 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.
 TW_HAS_NO_RECOVERY_PARTITION := true
 TW_EXCLUDE_APEX := true
 TW_BACKUP_EXCLUSIONS := /data/fonts
+TW_EXCLUDE_ENCRYPTED_BACKUPS := false
 
 # exFAT FS Support
 TW_INCLUDE_FUSE_EXFAT := true
