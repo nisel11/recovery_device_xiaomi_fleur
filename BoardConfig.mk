@@ -190,3 +190,22 @@ TW_INCLUDE_FUSE_NTFS := true
 TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_CRYPTO_FBE := true
 TW_INCLUDE_FBE_METADATA_DECRYPT := true
+
+# SHRP flags
+SHRP_DEVICE_CODE := fleur
+SHRP_PATH := device/xiaomi/fleur
+SHRP_MAINTAINER := nobody
+SHRP_REC_TYPE := Normal
+SHRP_DEVICE_TYPE := A/B
+SHRP_REC := /dev/block/by-name/boot
+SHRP_HAS_RECOVERY_PARTITION := false
+SHRP_AB := true
+SHRP_INTERNAL := /sdcard
+SHRP_EXTERNAL := /sdcard1
+SHRP_OTG := /usb_otg
+SHRP_FLASH := 1
+SHRP_EXPRESS := true
+SHRP_EXPRESS_USE_DATA := true
+SHRP_DARK := true
+SHRP_CUSTOM_FLASHLIGHT := true
+SHRP_FONP_1 := /sys/class/leds/lcd-backlight/brightness
