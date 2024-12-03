@@ -30,7 +30,7 @@
 
 ### Minor checks
 - [x] MTP export
-- [ ] reboot to bootloader (kernel issue)
+- [x] reboot to bootloader
 - [x] reboot to recovery
 - [x] poweroff
 - [x] battery level
