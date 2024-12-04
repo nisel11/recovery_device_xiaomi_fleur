@@ -1,5 +1,4 @@
 # TWRP device tree for Redmi Note 11S/Poco M4 Pro
-## For ROM's based on Noki trees
 
 ```
 #
