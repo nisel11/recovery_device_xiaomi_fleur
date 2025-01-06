@@ -1,5 +1,15 @@
 # mount point    	 fstype       device                 device2                         flags
 
+/system_ext         auto      /dev/block/mapper/system_ext                      flags=backup=1;display="System_ext";logical;slotselect;
+/system_root        auto      /dev/block/mapper/system                          flags=backup=1;display="System";logical;slotselect;
+/vendor             auto      /dev/block/mapper/vendor                          flags=backup=1;display="Vendor";logical;slotselect;
+/product            auto      /dev/block/mapper/product                         flags=backup=1;display="Product";logical;slotselect;
+
+/system_image       emmc      /dev/block/mapper/system_a                        flags=display="System.img";flashimg=1
+/system_ext_image   emmc      /dev/block/mapper/system_ext_a                    flags=display="System_EXT.img";flashimg=1
+/vendor_image       emmc      /dev/block/mapper/vendor_a                        flags=display="Vendor.img";flashimg=1
+/product_image      emmc      /dev/block/mapper/product_a                       flags=display="Product.img";flashimg=1
+
 ## User-writable / Storage partitions
 /boot			  emmc	      /dev/block/by-name/boot	     flags=slotselect;display="Boot";backup=1;flashimg=1
 /vendor_boot              emmc        /dev/block/by-name/vendor_boot     flags=display="Vendor Boot"
@@ -26,4 +36,4 @@
 
 # external
 /sdcard1	          vfat	      /dev/block/mmcblk0p1	/dev/block/mmcblk0	     flags=display="MicroSD Card";storage;wipeingui;removable
-/usb_otg	          vfat        /dev/block/sdd1           /dev/block/sdd                           flags=fsflags=utf8;display="USB-Storage";storage;wipeingui;removable
+/usb_otg	          auto        /dev/block/sdd1           /dev/block/sdd                           flags=fsflags=utf8;display="USB-Storage";storage;wipeingui;removable
